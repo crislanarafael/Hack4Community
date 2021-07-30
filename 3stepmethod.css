@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+html {
+  background: url(background2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 930px;
+}
+
+nav {
+  /* Sticky top nav bar so it stays at the top of the page even when the user scrolls down*/
+  background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 5;
+}
+
+.nav-menu {
+  list-style-type: none;
+}
+
+.nav-menu li {
+  display: inline-block;
+  padding: 20px 10px;
+  font-family: "Jost", sans-serif;
+}
+
+.nav-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+/*.nav-menu a:hover {
+  color: #ffde59;
+}*/
+
+#main-logo {
+  height: 65px;
+  width: 300px;
+}
+
+#account-profile-pic {
+  height: 140px;
+  width: 140px;
+  margin: 15px;
+  border-radius: 50%;
+}
+.account-info-area {
+  background: rgba(3, 152, 158, 0.65);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.profile-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-text {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.hero {
+  width: 100%;
+}
+
+/*.title-area {
+  grid-column: span 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.paragraphs {
+  grid-column: 1/2;
+  grid-row: 1;
+  margin-left: 5%;
+  margin-right: 10%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.hero-image {
+  grid-column: 2/2;
+  grid-row: 1;
+  display: flex;
+  min-width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
+  margin-left: 10%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+.main-content-wrapper {
+  display: grid;
+  width: auto;
+  min-height: 100vh;
+  /*background-color: #e8f5fb;*/
+  grid-gap: 15px;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.user-steps-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2);
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+}
+
+.step1-area {
+  grid-row: 1;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.step1-img {
+  grid-row: 1;
+  grid-column: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.step1 {
+  width: 100%;
+}
+
+.step2-area {
+  grid-row: 2;
+  grid-column: 2/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.step2-img {
+  grid-row: 2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-left: 15%;
+}
+
+.step2 {
+  width: 100%;
+}
+
+.step3-area {
+  grid-row: 3;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.step3-img {
+  grid-row: 3;
+  grid-column: 2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-left: 15%;
+}
+
+.step3 {
+  width: 100%;
+}
+
+.john-area {
+  grid-row: 2;
+  grid-column: 2/2;
+  display: flex;
+  justify-content: center;
+}
+
+.john {
+  width: 50%;
+}
+
+.header-title-area {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 100px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.menu-line {
+  color: black;
+  width: 20px;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.main-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.homepage-p {
+  margin-right: 25%;
+  margin-left: 13%;
+}
+
+.header-info {
+  padding-top: 3%;
+}
+
+.about-header-info {
+  padding: 0;
+}
+
+.intro-paragraph {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.intro-paragraph2 {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+}
+
+.tag-line {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: left;
+}
+
+p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.signupButton {
+  background: #1d6de9;
+  border-radius: 28px;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.signupButton-footer {
+  background: #e9991d;
+  border-radius: 28px;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.sign-in {
+  background: #1d6de9;
+  border-radius: 28px;
+  text-align: left;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.sign-in:hover {
+  color: #fff;
+}
+.singupButton:hover {
+  background-color: #5cbf2a;
+}
+.signupButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#sign-up-button {
+  position: absolute;
+}
+
+form {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+.signup-header {
+  margin: 0;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login-header {
+  margin: 0;
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #03989e;
+  border: 2px solid #2c493f;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.logoutButton {
+  display: block;
+  width: 20%;
+  padding: 0.75rem;
+  background: #03989e;
+  border: 2px solid #2c493f;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.chatButton {
+  display: block;
+  width: 20%;
+  padding: 0.75rem;
+  background: #ffa500;
+  border: 2px solid #2c493f;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.logout-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.sticky-footer {
+  background-color: #1d6de9;
+  position: sticky;
+  font-family: "Poppins", sans-serif;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.social-media {
+  width: 5%;
+}
+
+.account-name {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.adena-bubble {
+  position: relative;
+  background: #00aabb;
+  border-radius: 0.4em;
+  padding: 15px;
+}
+
+.adena-bubble:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #00aabb;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+
+.john-text {
+  grid-row: 2;
+  grid-column: 1/2;
+  margin-left: 15%;
+}
+.john-bubble {
+  position: relative;
+  background: #00aabb;
+  border-radius: 0.4em;
+  padding: 15px;
+}
+
+.john-bubble:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: #00aabb;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-right: -20px;
+}

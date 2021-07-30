@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <div>
+        <a href="index.html">
+          <img class="logo" src="reup_logo.png" />
+        </a>
+      </div>
+      ​
+      <ul class="nav-menu">
+        <li><a href="whyreup.html">Why ReUp?</a></li>
+        <li><a href="howtouse.html">How to Use</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a class="sign-in" href="login.html" style="color: white">Login</a>
+        </li>
+      </ul>
+    </nav>
+    ​
+    <!-- Main Content -->
+    ​
+    <div class="main-content-wrapper">
+      <div class="contact-form">
+        <div class="homepage-p">
+          <h1 class="tag-line">Let's Sign You Up!</h1>
+          <br />
+          <p class="intro-paragraph">
+            <form action="register.php" method="POST" autocomplete="off">
+                Enter Your Name: <input type='text' name='name' placeholder='Name' required><br>
+
+                Enter Your Unique Username: <input type='text' name='username' placeholder='Username' required><br>
+					
+				Enter Your Email: <input type='email' name='email' placeholder='Email' required><br>
+					
+				Enter Your Password: <input type='password' name='password' placeholder='Email' required><br><br>
+                <button class="myButton" type="submit">Sign Up</button>
+            </form>
+          </p>
+          <br />
+          <br />
+          
+        </div>
+        <br />
+        <br />
+        <br />
+      </div>
+      <div class="contact-image">
+        <img class="hero" src="contact.png" />
+      </div>
+    </div>
+
+    <!-- Footer Content -->
+
+    <footer class="sticky-footer">
+      <div>
+        <span style="color: #1de999">2021</span> ReUp <br />Created By Crislana
+        and Srijeeta
+      </div>
+      <div>
+        Follow Us <br /><br />
+        <div class="socials">
+          <img class="social-media" src="twitter.png" /><span> </span>
+          <img class="social-media" src="facebook.png" />
+          <img class="social-media" src="insta.png" />
+          <img class="social-media" src="youtube.png" />
+        </div>
+      </div>
+      <div class="sign-up-button">
+        <a href="signup.html" class="signupButton-footer"
+          >START YOUR EXCHANGE</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
