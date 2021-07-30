@@ -2,7 +2,7 @@
 ReUp is our project submission for the Hack4Community Hackathon
 
 ## DEVELOPER'S NOTE:
-I've included a link to the live site [HERE](https://jolly-mccarthy-192d5e.netlify.app/).<br><br> Right now, the login system, user dashboard, and posting system are hosted locally, so they will be the only things not working on the live link.
+I've included a link to the live site [HERE](https://jolly-mccarthy-192d5e.netlify.app/).<br><br> Right now, the login system, user dashboard, and posting system are hosted locally using XAMPP, so they will be the only things not working on the live link.
 ## Inspiration
 
 ## What it does
